@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="english"></html>
+  <head>
+    <title>MindGuard AI - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: none; /* Try 'none' instead of 'button' */
+  appearance: none;
+  color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./dashboard.css" rel="stylesheet" />
+      <div class="dashboard-container10">
+        <div class="dashboard-dashboard">
+          <div class="dashboard-container11">
+            <div class="dashboard-container12">
+              <div class="dashboard-container13">
+                <div class="dashboard-container14">
+                  <div class="dashboard-container15">
+                    <div class="dashboard-container16">
+                      <div class="dashboard-span1">
+                        <span class="dashboard-text10">MindGuard</span>
+                        <div class="dashboard-span2">
+                          <span class="dashboard-text11">AI</span>
+                        </div>
+                      </div>
+                      <img
+                        src="public/external/mentallogoremovebgpreview53102-l4d-200h.png"
+                        alt="MentalLogoremovebgpreview53102"
+                        class="dashboard-mental-logoremovebgpreview5"
+                      />
+                    </div>
+                    <div class="dashboard-container17">
+                      <div class="dashboard-container18">
+                        <span class="dashboard-text12">
+                          <a href="index.html">Home </a></span
+                        >
+                      </div>
+                      <div class="dashboard-container19">
+                        <span class="dashboard-text13">
+                          <a href="journal.html">Journal</a></span
+                        >
+                      </div>
+                    </div>
+                    <div class="dashboard-container20">
+                      <button class="dashboard-button1">
+                        <img
+                          src="public/external/frame3624-mfbh.svg"
+                          alt="Frame3624"
+                          class="dashboard-frame1"
+                        /></button
+                      ><button class="dashboard-button2">
+                        <img
+                          src="public/external/frame3628-o6b.svg"
+                          alt="Frame3628"
+                          class="dashboard-frame2"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-container21">
+                <div class="dashboard-container22">
+                  <div class="dashboard-heading1">
+                    <span class="dashboard-text14">Your Dashboard</span>
+                  </div>
+                  <div class="dashboard-paragraph">
+                    <span class="dashboard-text15"
+                      >Track your progress and insights</span
+                    >
+                  </div>
+                </div>
+                <div class="dashboard-container23">
+                  <div class="dashboard-container24">
+                    <div class="dashboard-container25">
+                      <div class="dashboard-container26">
+                        <img
+                          src="public/external/frame3641-wvxn.svg"
+                          alt="Frame3641"
+                          class="dashboard-frame3"
+                        />
+                      </div>
+                      <div class="dashboard-heading2">
+                        <span class="dashboard-text16">Average Mood</span>
+                      </div>
+                    </div>
+                    <div class="dashboard-container27">
+                      <span class="dashboard-text17">Sad</span>
+                    </div>
+                    <div class="dashboard-container28">
+                      <span class="dashboard-text18">Past 7 days</span>
+                    </div>
+                  </div>
+                  <div class="dashboard-container29">
+                    <div class="dashboard-container30">
+                      <div class="dashboard-container31">
+                        <img
+                          src="public/external/frame3653-8i57.svg"
+                          alt="Frame3653"
+                          class="dashboard-frame4"
+                        />
+                      </div>
+                      <div class="dashboard-heading3">
+                        <span class="dashboard-text19"
+                          >Activities Completed</span
+                        >
+                      </div>
+                    </div>
+                    <div class="dashboard-container32">
+                      <span class="dashboard-text20">21</span>
+                    </div>
+                    <div class="dashboard-container33">
+                      <span class="dashboard-text21">This week</span>
+                    </div>
+                  </div>
+                  <div class="dashboard-container34">
+                    <div class="dashboard-container35">
+                      <div class="dashboard-container36">
+                        <img
+                          src="public/external/frame3664-oadn.svg"
+                          alt="Frame3664"
+                          class="dashboard-frame5"
+                        />
+                      </div>
+                      <div class="dashboard-heading4">
+                        <span class="dashboard-text22">Journal Streak</span>
+                      </div>
+                    </div>
+                    <div class="dashboard-container37">
+                      <span class="dashboard-text23">5 days</span>
+                    </div>
+                    <div class="dashboard-container38">
+                      <span class="dashboard-text24">Keep it up!</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard-container39">
+                  <div class="dashboard-heading5">
+                    <span class="dashboard-text25">Weekly Mood Pattern</span>
+                  </div>
+                  <div class="dashboard-container40">
+                    <div class="dashboard-container41">
+                      <div class="dashboard-container42">
+                        <div class="dashboard-frame6">
+                          <div class="dashboard-group10">
+                            <div class="dashboard-group11">
+                              <img
+                                src="public/external/vector3684-fo88.svg"
+                                alt="Vector3684"
+                                class="dashboard-vector10"
+                              /><img
+                                src="public/external/vector3685-wco.svg"
+                                alt="Vector3685"
+                                class="dashboard-vector11"
+                              /><img
+                                src="public/external/vector3686-4qk.svg"
+                                alt="Vector3686"
+                                class="dashboard-vector12"
+                              /><img
+                                src="public/external/vector3687-zhmb.svg"
+                                alt="Vector3687"
+                                class="dashboard-vector13"
+                              />
+                            </div>
+                          </div>
+                          <div class="dashboard-group12">
+                            <img
+                              src="public/external/vector3689-048g.svg"
+                              alt="Vector3689"
+                              class="dashboard-vector14"
+                            />
+                            <div class="dashboard-group13">
+                              <div class="dashboard-group14">
+                                <img
+                                  src="public/external/vector3692-bdfb.svg"
+                                  alt="Vector3692"
+                                  class="dashboard-vector15"
+                                /><span class="dashboard-text26">Mon</span>
+                              </div>
+                              <div class="dashboard-group15">
+                                <img
+                                  src="public/external/vector3695-iz4n.svg"
+                                  alt="Vector3695"
+                                  class="dashboard-vector16"
+                                /><span class="dashboard-text27">Tue</span>
+                              </div>
+                              <div class="dashboard-group16">
+                                <img
+                                  src="public/external/vector3698-eouc.svg"
+                                  alt="Vector3698"
+                                  class="dashboard-vector17"
+                                /><span class="dashboard-text28">Wed</span>
+                              </div>
+                              <div class="dashboard-group17">
+                                <img
+                                  src="public/external/vector3701-ac.svg"
+                                  alt="Vector3701"
+                                  class="dashboard-vector18"
+                                /><span class="dashboard-text29">Thu</span>
+                              </div>
+                              <div class="dashboard-group18">
+                                <img
+                                  src="public/external/vector3704-hbi.svg"
+                                  alt="Vector3704"
+                                  class="dashboard-vector19"
+                                /><span class="dashboard-text30">Fri</span>
+                              </div>
+                              <div class="dashboard-group19">
+                                <img
+                                  src="public/external/vector3707-z8wh.svg"
+                                  alt="Vector3707"
+                                  class="dashboard-vector20"
+                                /><span class="dashboard-text31">Sat</span>
+                              </div>
+                              <div class="dashboard-group20">
+                                <img
+                                  src="public/external/vector3710-97kx.svg"
+                                  alt="Vector3710"
+                                  class="dashboard-vector21"
+                                /><span class="dashboard-text32">Sun</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dashboard-group21">
+                            <img
+                              src="public/external/vector3713-8lhq.svg"
+                              alt="Vector3713"
+                              class="dashboard-vector22"
+                            />
+                            <div class="dashboard-group22">
+                              <div class="dashboard-group23">
+                                <img
+                                  src="public/external/vector3716-vdz.svg"
+                                  alt="Vector3716"
+                                  class="dashboard-vector23"
+                                /><span class="dashboard-text30">0</span>
+                              </div>
+                              <div class="dashboard-group24">
+                                <img
+                                  src="public/external/vector3719-z7w.svg"
+                                  alt="Vector3719"
+                                  class="dashboard-vector24"
+                                /><span class="dashboard-text31">4</span>
+                              </div>
+                              <div class="dashboard-group25">
+                                <img
+                                  src="public/external/vector3722-fyk.svg"
+                                  alt="Vector3722"
+                                  class="dashboard-vector25"
+                                /><span class="dashboard-text32">6</span>
+                              </div>
+                              <div class="dashboard-group26">
+                                <img
+                                  src="public/external/vector3725-09jq.svg"
+                                  alt="Vector3725"
+                                  class="dashboard-vector26"
+                                /><span class="dashboard-text33">10</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dashboard-group27">
+                            <div class="dashboard-group28">
+                              <div class="dashboard-clippathgroup">
+                                <div
+                                  class="dashboard-animation-clip-pathrechartsarea15"
+                                >
+                                  
+                                </div>
+                                <div class="dashboard-group29">
+                                  <div class="dashboard-group30">
+                                    <img
+                                      src="public/external/vector3734-pl9.svg"
+                                      alt="Vector3734"
+                                      class="dashboard-vector28"
+                                    /><img
+                                      src="public/external/vector3735-757l.svg"
+                                      alt="Vector3735"
+                                      class="dashboard-vector29"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard-container43">
+                  <div class="dashboard-heading6">
+                    <span class="dashboard-text34">Activity Completion</span>
+                  </div>
+                  <div class="dashboard-container44">
+                    <div class="dashboard-container45">
+                      <div class="dashboard-container46">
+                        <div class="dashboard-frame7">
+                          <div class="dashboard-group31">
+                            <div class="dashboard-group32">
+                              <img
+                                src="public/external/vector3745-k9ra.svg"
+                                alt="Vector3745"
+                                class="dashboard-vector30"
+                              /><img
+                                src="public/external/vector3746-euhv.svg"
+                                alt="Vector3746"
+                                class="dashboard-vector31"
+                              /><img
+                                src="public/external/vector3747-ux4f.svg"
+                                alt="Vector3747"
+                                class="dashboard-vector32"
+                              /><img
+                                src="public/external/vector3748-f6v.svg"
+                                alt="Vector3748"
+                                class="dashboard-vector33"
+                              /><img
+                                src="public/external/vector3749-56mb.svg"
+                                alt="Vector3749"
+                                class="dashboard-vector34"
+                              />
+                            </div>
+                          </div>
+                          <div class="dashboard-group33">
+                            <img
+                              src="public/external/vector3751-csef.svg"
+                              alt="Vector3751"
+                              class="dashboard-vector35"
+                            />
+                            <div class="dashboard-group34">
+                              <div class="dashboard-group35">
+                                <img
+                                  src="public/external/vector3754-o7z9.svg"
+                                  alt="Vector3754"
+                                  class="dashboard-vector36"
+                                /><span class="dashboard-text35"
+                                  >Mindfulness</span
+                                >
+                              </div>
+                              <div class="dashboard-group36">
+                                <img
+                                  src="public/external/vector3757-z429.svg"
+                                  alt="Vector3757"
+                                  class="dashboard-vector37"
+                                /><span class="dashboard-text36"
+                                  >Journaling</span
+                                >
+                              </div>
+                              <div class="dashboard-group37">
+                                <img
+                                  src="public/external/vector3760-v395.svg"
+                                  alt="Vector3760"
+                                  class="dashboard-vector38"
+                                /><span class="dashboard-text37">Exercise</span>
+                              </div>
+                              <div class="dashboard-group38">
+                                <img
+                                  src="public/external/vector3763-k0v2.svg"
+                                  alt="Vector3763"
+                                  class="dashboard-vector39"
+                                /><span class="dashboard-text38"
+                                  >Gratitude</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dashboard-group39">
+                            <img
+                              src="public/external/vector3766-a1bf.svg"
+                              alt="Vector3766"
+                              class="dashboard-vector40"
+                            />
+                            <div class="dashboard-group40">
+                              <div class="dashboard-group41">
+                                <img
+                                  src="public/external/vector3769-pec7.svg"
+                                  alt="Vector3769"
+                                  class="dashboard-vector41"
+                                /><span class="dashboard-text35">0</span>
+                              </div>
+                              <div class="dashboard-group42">
+                                <img
+                                  src="public/external/vector3772-br4.svg"
+                                  alt="Vector3772"
+                                  class="dashboard-vector42"
+                                /><span class="dashboard-text36">5</span>
+                              </div>
+                              <div class="dashboard-group43">
+                                <img
+                                  src="public/external/vector3775-g61.svg"
+                                  alt="Vector3775"
+                                  class="dashboard-vector43"
+                                /><span class="dashboard-text37">8</span>
+                              </div>
+                              <div class="dashboard-group44">
+                                <img
+                                  src="public/external/vector3778-4rvn.svg"
+                                  alt="Vector3778"
+                                  class="dashboard-vector44"
+                                /><span class="dashboard-text38"> 10 </span>
+                              </div>
+                              <div class="dashboard-group45">
+                                <img
+                                  src="public/external/vector3781-akke.svg"
+                                  alt="Vector3781"
+                                  class="dashboard-vector45"
+                                /><span class="dashboard-text39">12</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dashboard-group46">
+                            <div class="dashboard-group47">
+                              <div class="dashboard-group48">
+                                <div class="dashboard-group49">
+                                  <img
+                                    src="public/external/vector3787-qmfe.svg"
+                                    alt="Vector3787"
+                                    class="dashboard-vector46"
+                                  />
+                                </div>
+                                <div class="dashboard-group50">
+                                  <img
+                                    src="public/external/vector3789-6q6.svg"
+                                    alt="Vector3789"
+                                    class="dashboard-vector47"
+                                  />
+                                </div>
+                                <div class="dashboard-group51">
+                                  <img
+                                    src="public/external/vector3791-pq6a.svg"
+                                    alt="Vector3791"
+                                    class="dashboard-vector48"
+                                  />
+                                </div>
+                                <div class="dashboard-group52">
+                                  <img
+                                    src="public/external/vector3793-znoj.svg"
+                                    alt="Vector3793"
+                                    class="dashboard-vector49"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-container47">
+                <div class="dashboard-container48">
+                  <div class="dashboard-container49">
+                    <div class="dashboard-container50">
+                      <div class="dashboard-span3">
+                        <span class="dashboard-text40">MindGuard</span>
+                        <div class="dashboard-span4"></div>
+                      </div>
+                      <img
+                        src="public/external/mentallogoremovebgpreview33101-fsx-200h.png"
+                        alt="MentalLogoremovebgpreview33101"
+                        class="dashboard-mental-logoremovebgpreview3"
+                      />
+                    </div>
+                    <span class="dashboard-text41">AI</span>
+                    <div class="dashboard-container51">
+                      <div class="dashboard-container52">
+                        <img
+                          src="public/external/frame3807-l79l.svg"
+                          alt="Frame3807"
+                          class="dashboard-frame8"
+                        />
+                        <div class="dashboard-span5">
+                          <span class="dashboard-text42">HIPAA Compliant</span>
+                        </div>
+                      </div>
+                      <div class="dashboard-container53">
+                        <img
+                          src="public/external/frame3812-h4p.svg"
+                          alt="Frame3812"
+                          class="dashboard-frame9"
+                        />
+                        <div class="dashboard-span6">
+                          <span class="dashboard-text43"
+                            >End-to-end encrypted</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dashboard-container54">
+                    <div class="dashboard-container55">
+                      <div class="dashboard-container56">
+                        <span class="dashboard-text44">About</span>
+                      </div>
+                      <div class="dashboard-container57">
+                        <span class="dashboard-text45">Privacy</span>
+                      </div>
+                      <div class="dashboard-container58">
+                        <span class="dashboard-text46">Terms</span>
+                      </div>
+                      <div class="dashboard-container59">
+                        <span class="dashboard-text47">Contact</span>
+                      </div>
+                    </div>
+                    <div class="dashboard-container60">
+                      <span class="dashboard-text48"
+                        >© 2025 MindGuard AI. All rights reserved.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-span7"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

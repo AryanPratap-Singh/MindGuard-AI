@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindGuard AI - Mood Feedback</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(/MindGuard-AI/BG.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .container {
+      background-color: whitesmoke;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 400px;
+    }
+    h1 {
+      color: #333;
+    }
+    select, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    textarea {
+      resize: none;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .success {
+      font-size: 16px;
+      color: green;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    a:-webkit-any-link {
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>How are you feeling?</h1>
+    <form id="moodForm">
+      <select id="mood" required>
+        <option value="">How you are feeling right now!?</option>
+        <option value="Energetic">Energetic</option>
+        <option value="Sad">Sad</option>
+        <option value="Anxious">Anxious</option>
+        <option value="Angry">Angry</option>
+        <option value="Stressed">Stressed</option>
+        <option value="Depressed">Depressed</option>
+      </select>
+        <h1>Write Your Journal</h1>
+      <textarea id="comments" rows="4" placeholder="Elaborate the mood to keep track of it..."></textarea>
+
+      <button type="submit">Submit</button>
+      <button class="home-link"><a href="index.html">Home</a></button>
+      
+      <div class="success" id="successMsg"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('moodForm');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const mood = document.getElementById('mood').value;
+      const comments = document.getElementById('comments').value;
+
+      const feedback = {
+        mood: mood,
+        comments: comments,
+        date: new Date().toLocaleString()
+      };
+
+      let feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+      feedbacks.push(feedback);
+      localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+
+      successMsg.textContent = "Submitted!";
+      form.reset();
+
+      setTimeout(() => {
+        successMsg.textContent = "";
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="english"></html>
+  <head>
+    <title>MindGuard AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none; /* Try 'none' instead of 'button' */
+  appearance: none;
+  color: inherit;
+}
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+      <div class="home-container10">
+          <div class="home-container11">
+              <div class="home-container13">
+                <div class="home-container14">
+                  <div class="home-container15">
+                    <div class="home-container16">
+                      <div class="home-span1">
+                        <span class="home-text10">MindGuard</span>
+                      </div>
+                    </div>
+                    <div class="home-span2">
+                      <span class="home-text11">AI</span>
+                    </div>
+                    <div class="home-container17">
+                      <div class="home-container18">
+                        <span class="home-text12">
+                          <a href="dashboard.html">Dashboard </a></span>
+                      </div>
+                      <div class="home-container19">
+                        <span class="home-text13">
+                          <a href="journal.html">Journal</a></span>
+                      </div>
+                    </div>
+                    <div class="home-container20">
+                      <button class="home-button1">
+                        <img
+                          src="public/external/frame2428-gia7.svg"
+                          alt="Frame2428"
+                          class="home-frame10"
+                        /></button
+                      ><button class="home-button2">
+                        <img
+                          src="public/external/frame2432-9rjg.svg"
+                          alt="Frame2432"
+                          class="home-frame11"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <img
+                    src="public/external/mentallogoremovebgpreview12590-v3zk-200h.png"
+                    alt="MentalLogoremovebgpreview12590"
+                    class="home-mental-logoremovebgpreview1"
+                  />
+                </div>
+              </div>
+              <div class="home-container21">
+                <div class="home-section1">
+                  <div class="home-container22">
+                    <div class="home-container23">
+                      <div class="home-heading1">
+                        <span class="home-text14"
+                          >Your Personal Mental Wellness</span
+                        >
+                        <div class="home-span3">
+                          <span class="home-text15"> AI Assistant</span>
+                        </div>
+                      </div>
+                      <div class="home-paragraph1">
+                        <span class="home-text16"
+                          >Journey to better mental health with personalized AI
+                          guidance and support</span
+                        >
+                      </div>
+                      <div class="home-container24">
+                        <span class="home-text17">
+                          <a href="inputs.html">Start Your Journey</a></span>
+                      </div>
+                    </div>
+                    <div class="home-container25">
+                      <div class="home-container26">
+                        <div class="home-image"></div>
+                      </div>
+                      <div class="home-container27">
+                        <div class="home-heading2">
+                          <span class="home-text18"
+                            >Why Choose MindGuardAI?</span
+                          >
+                        </div>
+                        <div class="home-container28">
+                          <div class="home-container29">
+                            <div class="home-container30">
+                              <img
+                                src="public/external/frame2456-dldv.svg"
+                                alt="Frame2456"
+                                class="home-frame12"
+                              />
+                            </div>
+                            <div class="home-container31">
+                              <div class="home-heading3">
+                                <span class="home-text19"
+                                  >AI-Powered Insights</span
+                                >
+                              </div>
+                              <div class="home-paragraph2">
+                                <span class="home-text20"
+                                  >Get personalized recommendations based on
+                                  your mood </span
+                                ><span class="home-text21"
+                                  >patterns and journal entries</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="home-container32">
+                            <div class="home-container33">
+                              <img
+                                src="public/external/frame2474-dou.svg"
+                                alt="Frame2474"
+                                class="home-frame13"
+                              />
+                            </div>
+                            <div class="home-container34">
+                              <div class="home-heading4">
+                                <span class="home-text22"
+                                  >Daily Emotional Support</span
+                                >
+                              </div>
+                              <div class="home-paragraph3">
+                                <span class="home-text23"
+                                  >Track your moods and receive tailored
+                                  activities to improve </span
+                                ><span class="home-text24"
+                                  >your well-being</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="home-container35">
+                            <div class="home-container36">
+                              <img
+                                src="public/external/frame2484-5gw5.svg"
+                                alt="Frame2484"
+                                class="home-frame14"
+                              />
+                            </div>
+                            <div class="home-container37">
+                              <div class="home-heading5">
+                                <span class="home-text25"
+                                  >Private &amp; Secure</span
+                                >
+                              </div>
+                              <div class="home-paragraph4">
+                                <span class="home-text26"
+                                  >Your data is protected with end-to-end
+                                  encryption and </span
+                                ><span class="home-text27"
+                                  >HIPAA compliance</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-section2">
+                  <div class="home-container38">
+                    <div class="home-heading6">
+                      <span class="home-text28">What Our Users Say</span>
+                    </div>
+                    <div class="home-container39">
+                      <div class="home-container40">
+                        <div class="home-container41">
+                          <img
+                            src="public/external/frame2499-9ipk.svg"
+                            alt="Frame2499"
+                            class="home-frame15"
+                          />
+                        </div>
+                        <div class="home-paragraph5">
+                          <span class="home-text29"
+                            >MindGuard AI has helped  </span
+                          ><span class="home-text30"
+                            >me understand my emotional patterns </span
+                          ><span class="home-text31"
+                            >better than ever before.</span
+                          >
+                        </div>
+                        <div class="home-container42">
+                          <div class="home-container43">
+                            <span class="home-text32">Rishabh S.</span>
+                          </div>
+                          <div class="home-container44">
+                            <span class="home-text33">Student</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="home-container45">
+                        <div class="home-container46">
+                          <img
+                            src="public/external/frame2515-2gl.svg"
+                            alt="Frame2515"
+                            class="home-frame16"
+                          />
+                        </div>
+                        <div class="home-paragraph6">
+                          <span class="home-text34"
+                            >The daily check-ins and </span
+                          ><span class="home-text35"
+                            >personalized activities have made a </span
+                          ><span class="home-text36"
+                            >real difference in my life.</span
+                          >
+                        </div>
+                        <div class="home-container47">
+                          <div class="home-container48">
+                            <span class="home-text37">Aryan P.</span>
+                          </div>
+                          <div class="home-container49">
+                            <span class="home-text38">Trainee</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="home-container50">
+                        <div class="home-container51">
+                          <img
+                            src="public/external/frame2531-vkh.svg"
+                            alt="Frame2531"
+                            class="home-frame17"
+                          />
+                        </div>
+                        <div class="home-paragraph7">
+                          <span class="home-text39"
+                            >Finally, a mental health app that </span
+                          ><span class="home-text40"
+                            >feels like it truly understands me.</span
+                          >
+                        </div>
+                        <div class="home-container52">
+                          <div class="home-container53">
+                            <span class="home-text41">Aadrika S.</span>
+                          </div>
+                          <div class="home-container54">
+                            <span class="home-text42">Intern</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-section3">
+                  <div class="home-container55">
+                    <div class="home-heading7">
+                      <span class="home-text43"
+                        >Ready to Start Your Journey?</span
+                      >
+                    </div>
+                    <div class="home-paragraph8">
+                      <span class="home-text44"
+                        >Join thousands of others who have transformed their
+                        mental well-being with MindGuard AI</span
+                      >
+                    </div>
+                    <div class="home-container56">
+                      <span class="home-text45">
+                        <a href="inputs.html">Get Started Now</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-container57">
+                <div class="home-container58">
+                  <div class="home-container59">
+                    <div class="home-container60">
+                      <div class="home-span4">
+                        <span class="home-text46">MindGuard</span>
+                        <div class="home-span5"></div>
+                      </div>
+                      <img
+                        src="public/external/mentallogoremovebgpreview22601-wl9-200h.png"
+                        alt="MentalLogoremovebgpreview22601"
+                        class="home-mental-logoremovebgpreview2"
+                      />
+                    </div>
+                    <span class="home-text47">AI</span>
+                    <div class="home-container61">
+                      <div class="home-container62">
+                        <img
+                          src="public/external/frame2565-11x.svg"
+                          alt="Frame2565"
+                          class="home-frame18"
+                        />
+                        <div class="home-span6">
+                          <span class="home-text48">HIPAA Compliant</span>
+                        </div>
+                      </div>
+                      <div class="home-container63">
+                        <img
+                          src="public/external/frame2570-1dx.svg"
+                          alt="Frame2570"
+                          class="home-frame19"
+                        />
+                        <div class="home-span7">
+                          <span class="home-text49">End-to-end encrypted</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-container64">
+                    <div class="home-container65">
+                      <div class="home-container66">
+                        <span class="home-text50">About</span>
+                      </div>
+                      <div class="home-container67">
+                        <span class="home-text51">Privacy</span>
+                      </div>
+                      <div class="home-container68">
+                        <span class="home-text52">Terms</span>
+                      </div>
+                      <div class="home-container69">
+                        <span class="home-text53">Contact</span>
+                      </div>
+                    </div>
+                    <div class="home-container70">
+                      <span class="home-text54"
+                        >© 2025 MindGuard AI. All rights reserved.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="home-span8"></div>
+      </div>
+    </div>
+  </body>
+</html>
